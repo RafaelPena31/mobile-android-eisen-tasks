@@ -1,5 +1,4 @@
 # Eisen Tasks
-### mobile-android-eisen-tasks
 
-# Description
+## Description
 Task manager app applying Eisenhower matrix in studend context
