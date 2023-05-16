@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/ic_cell_task_background"
+    android:padding="12dp">
+
+    <CheckBox
+        android:id="@+id/checkBoxTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:button="@drawable/ic_selector_check_box_task"
+        android:includeFontPadding="false"
+        android:paddingStart="12dp"
+        android:text="Lista de cálculo 1"
+        android:textColor="@color/text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/imgViewTaskDeleteBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgViewTaskDeleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxTask"
+        app:srcCompat="@drawable/ic_baseline_delete"
+        app:tint="@color/text_bold" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

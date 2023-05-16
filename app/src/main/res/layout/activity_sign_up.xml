@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".modules.auth.SignInActivity">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/component_sign_header"
+            app:descriptionTxt="@{@string/sign_in_description}" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gui_sign_in_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gui_sign_in_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            style="@style/MainInput"
+            android:layout_marginTop="24dp"
+            android:hint="@string/sign_form_input_name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/gui_sign_in_right"
+            app:layout_constraintStart_toStartOf="@+id/gui_sign_in_left"
+            app:layout_constraintTop_toBottomOf="@+id/include" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            style="@style/MainInput"
+            android:layout_marginTop="12dp"
+            android:hint="@string/sign_form_input_email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toStartOf="@+id/gui_sign_in_right"
+            app:layout_constraintStart_toStartOf="@+id/gui_sign_in_left"
+            app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+        <EditText
+            android:id="@+id/editTextPwd"
+            style="@style/MainInput"
+            android:layout_marginTop="12dp"
+            android:hint="@string/sign_form_input_pwd"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toStartOf="@+id/gui_sign_in_right"
+            app:layout_constraintStart_toStartOf="@+id/gui_sign_in_left"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+        <EditText
+            android:id="@+id/editTextConfirmPwd"
+            style="@style/MainInput"
+            android:layout_marginTop="12dp"
+            android:hint="@string/sign_form_input_confirm_pwd"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toStartOf="@+id/gui_sign_in_right"
+            app:layout_constraintStart_toStartOf="@+id/gui_sign_in_left"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPwd" />
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            style="@style/MainButton"
+            android:text="@string/sign_up_btn"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toStartOf="@+id/gui_sign_in_right"
+            app:layout_constraintStart_toStartOf="@+id/gui_sign_in_left"
+            app:layout_constraintTop_toBottomOf="@+id/editTextConfirmPwd"
+            app:layout_constraintVertical_bias="0.08" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/gui_sign_in_right"
+            app:layout_constraintStart_toStartOf="@+id/gui_sign_in_left">
+
+            <TextView
+                android:id="@+id/txtSignUpCta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_cta"
+                android:textColor="@color/yellow"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/sign_cta"
+                android:textColor="@color/text"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

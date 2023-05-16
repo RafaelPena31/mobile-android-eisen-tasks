@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".modules.walkthrough.WalkthroughActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gui_init_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gui_init_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btn_init_create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/eisen_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/app_description"
+        android:textAlignment="center"
+        android:textColor="@color/text_secondary"
+        app:layout_constraintEnd_toStartOf="@+id/gui_init_right"
+        app:layout_constraintStart_toStartOf="@+id/gui_init_left"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_init_create"
+        style="@style/MainButton"
+        android:text="@string/init_sign_up_btn"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_init_enter"
+        app:layout_constraintEnd_toStartOf="@+id/gui_init_right"
+        app:layout_constraintStart_toStartOf="@+id/gui_init_left" />
+
+    <Button
+        android:id="@+id/btn_init_enter"
+        style="@style/SecondaryButton"
+        android:layout_marginBottom="24dp"
+        android:text="@string/init_sign_in_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gui_init_right"
+        app:layout_constraintStart_toStartOf="@+id/gui_init_left" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

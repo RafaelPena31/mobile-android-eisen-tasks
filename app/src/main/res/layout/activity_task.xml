@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modules.TaskActivity">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gui_task_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gui_task_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <ImageView
+        android:id="@+id/imgViewTaskLeftBtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="@+id/gui_task_left"
+        app:layout_constraintTop_toTopOf="@+id/txtViewNameSubjectTask"
+        app:srcCompat="@drawable/ic_baseline_arrow_back"
+        app:tint="@color/gray_600" />
+
+    <ImageView
+        android:id="@+id/imgViewSubjectTaskDeleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgViewTaskLeftBtn"
+        app:srcCompat="@drawable/ic_baseline_delete"
+        app:tint="@color/red" />
+
+    <TextView
+        android:id="@+id/txtViewNameSubjectTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
+        android:text="Matemática"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/grey_dark"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imgViewSubjectTaskDeleteBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewDescriptionSubjectTask"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Descrição opcional da matéria cadastrada no app"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/text_bold"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/gui_task_right"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewNameSubjectTask" />
+
+    <Button
+        android:id="@+id/btn_dash_create_task"
+        style="@style/MainButton"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/dash_subject_task_btn"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/gui_task_left"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewDescriptionSubjectTask" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dash_subject_task_qtn"
+        android:textColor="@color/text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/gui_task_right"
+        app:layout_constraintTop_toTopOf="@+id/btn_dash_create_task" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03"
+        android:textColor="@color/text_bold"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/gui_task_right"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewTask"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gui_task_right"
+        app:layout_constraintStart_toStartOf="@+id/gui_task_left"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dash_create_task" />
+</androidx.constraintlayout.widget.ConstraintLayout>

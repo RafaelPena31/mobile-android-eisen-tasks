@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Eisen</string>
+    <string name="app_description">Priorize sua vida estudantil em poucos minutos</string>
+
+    <string name="init_sign_in_btn">Entrar</string>
+    <string name="init_sign_up_btn">Começar agora</string>
+
+    <string name="sign_in_description">Entre agora em sua conta Eisen e priorize a sua vida</string>
+    <string name="sign_in_cta">Crie sua conta</string>
+    <string name="sign_in_btn">Entrar agora</string>
+
+    <string name="sign_up_cta">Já possui uma conta</string>
+    <string name="sign_up_btn">Crie sua conta</string>
+
+    <string name="sign_cta">para Eisen</string>
+
+    <string name="sign_form_input_name">Nome</string>
+    <string name="sign_form_input_email">E-mail</string>
+    <string name="sign_form_input_pwd">Senha</string>
+    <string name="sign_form_input_confirm_pwd">Confirmar senha</string>
+
+    <string name="dash_welcome">Bem vindo, %1$s</string>
+    <string name="dash_description">Eisen, sua matriz de prioridades e tarefas</string>
+    <string name="dash_subject_btn">Nova matéria</string>
+    <string name="dash_subject_qtn">Nº de matérias</string>
+
+    <string name="dash_subject_task_btn">Nova tarefa</string>
+    <string name="dash_subject_task_qtn">Nº de tarefas</string>
+
+    <string name="dash_create_subject_description">Crie sua matéria</string>
+    <string name="dash_create_subject_name_input_label">Nome da matéria:</string>
+    <string name="dash_create_subject_name_input">Nome da matéria</string>
+    <string name="dash_create_subject_description_input_label">Descrição da matéria:</string>
+    <string name="dash_create_subject_description_input">Descrição da matéria</string>
+    <string name="dash_create_subject_btn">Criar matéria</string>
+
+    <string name="dash_create_subject_task_description">Crie sua tarefa</string>
+    <string name="dash_create_subject_task_name_input_label">Tarefa:</string>
+    <string name="dash_create_subject_task_name_input">Tarefa</string>
+    <string name="dash_create_subject_task_priority_input_label">Prioridade:</string>
+    <string name="dash_create_subject_task_btn">Criar tarefa</string>
+
+    <string name="profile_title">Perfil</string>
+    <string name="profile_description">Eisen, sua matriz de prioridades e tarefas</string>
+    <string name="profile_sign_out_btn">Sair da conta</string>
+    <string name="profile_delete_btn">Deletar conta</string>
+
+    <string name="eisen_priority">Priorizado</string>
+    <string name="eisen_schedule">Agendado</string>
+    <string name="eisen_delegate">Delegado</string>
+    
+    <string-array name="eisen_priority_category">
+        <item>Priorizado</item>
+        <item>Agendado</item>
+        <item>Delegado</item>
+    </string-array>
+</resources>
